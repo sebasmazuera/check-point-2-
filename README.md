@@ -35,7 +35,7 @@ Essayez de pinguer le serveur en utilisant son nom d'hôte : ping WINSERV.
 
 ### Q.1.3 :
 Pour configurer le client en mode DHCP:
-1. Client Windows 10 (CheckPoint2-CLIWIN10) :
+1. **Client Windows 10 (CheckPoint2-CLIWIN10) :**
    - J'ouvre les paramètres réseau du client.
    - Modifie la configuration IP pour obtenir l'adresse IP automatiquement (mode DHCP)
 2. **Vérification du paramétrage DHCP sur le serveur :**
@@ -43,6 +43,14 @@ Pour configurer le client en mode DHCP:
    - j'ouvre le Gestionnaire de serveur.
    - je vérifie que le rôle DHCP est installé et configuré.
    - la plage DHCP configurée sur le serveur.
+### Q.1.4 :
+Il est possible pour le client peut avoir l'adresse IP 172.16.10.15 en DHCP 
+Il faut just modifier la plage d'exclusion par exemple de 172.16.10.1 à 172.16.10.14 et en excluant en plus 172.16.10.20.
+Come ca quand on lance la comande "ipconfig /release puis ipconfig /renew" sur le client on poura récupérer cette IP.
+
+## Exercice 2 Débogage de script PowerShell
+
+
 
 
 
