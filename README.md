@@ -50,10 +50,14 @@ Come ca quand on lance la comande "ipconfig /release puis ipconfig /renew" sur l
 
 ## Exercice 2 Débogage de script PowerShell
 
-### a. Contexte
+### Q.2.1 
 Pour que le script AddLocalUsers.ps1 s'éxecut il faut changer le path 
 
 Start-Process -FilePath "powershell.exe" -ArgumentList "C:\Scripts\addlocalusers.ps1" -Verb RunAs  -WindowStyle Hidden
+
+
+### Q.2.2 
+
 
 
 
