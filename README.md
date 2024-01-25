@@ -60,6 +60,55 @@ Start-Process -FilePath "powershell.exe" -ArgumentList "C:\Scripts\addlocalusers
 
 
 ### Q.2.2 
+On doit modifier le skip2 en skip1
+
+### Q.2.3
+
+On doit ajouter la variable "description = $Description"
+
+### Q.2.4
+Il faut supprimer les  champs suivantes 
+"societe","service","mail","mobile","scriptpath","telephoneNumber"
+
+### Q.2.5
+Il faut rajouter la commande :
+Write-Host "Utilisateur $Name créé , Password: $Password"
+
+### Q.2.6
+Il faut  la fonction log dans la boucle 
+"Log -FilePath $LogFile -Content "Utilisateur $Name créé , Password: $Password"
+
+### Q.2.7
+Avec un "Else" dans le "If" pour dire "utilisateur existe "
+
+### Q.2.8
+la commande  Add-LocalGroupMember n'est pas bonne il faut utiliser Add-UserToLocalGroup.
+
+### Q.2.9
+foreach ($User in $Users)
+{
+    $Prenom = ManageAccentsAndCapitalLetters -String $User.prenom
+    $Nom = ManageAccentsAndCapitalLetters -String $User.nom
+    $Name = "$Prenom.$Nom"
+    ....
+### Q.2.10
+PasswordNeverExpires = $true 
+
+### Q.2.11
+Function Random-Password ($length = 10)
+
+
+## 3 Vérification d'une infrastructure réseau 
+
+### Q.3.1
+Le matériel réseau A est un commutateur, communément appelé switch.
+Son rôle est de connecter les ordinateurs entre-eux et de faciliter leur
+communication avec les adresses MAC.
+Il intervient au niveau de la couche 2 du modèle OSI.
+Ici il relie également les ordinateurs au matériel B.
+
+### Q.3.2
+
 
 
 
